@@ -21,11 +21,14 @@ classifiers = [
     'Development Status :: 5 - Production/Stable',
 ]
 
+with open('README.rst') as readme_file:
+    long_description = readme_file.read()
+
 kw = {
     'name':             'gitlink',
     'version':          version,
     'description':      'Git sub-command for getting a repo browser link to a git object',
-    'long_description': open('README.rst').read(),
+    'long_description': long_description,
     'url':              'https://github.com/gvalkov/git-link',
     'author':           'Georgi Valkov',
     'author_email':     'georgi.t.valkov@gmail.com',
